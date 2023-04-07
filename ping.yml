@@ -9,4 +9,4 @@
   become: false 
   tasks: 
   - name: "ls" 
-    command: "ls /tmp"
+    command: "ls /tmp"    
