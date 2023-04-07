@@ -2,9 +2,13 @@
 - hosts: "localhost" 
   become: false 
   tasks: 
-  - name: "Add to hosts" 
+  - name: "Add to hosts 1" 
     ansible.builtin.add_host:
-      hostname: '{{ new_ip }}'
+      hostname: '{{ new_ip_1 }}'
       groups:
       - group1
+  - name: "Add to hosts 2" 
+    ansible.builtin.add_host:
+      hostname: '{{ new_ip_2 }}'
+      groups:
       - group2
