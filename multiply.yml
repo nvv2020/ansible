@@ -1,0 +1,4 @@
+---
+- import_playbook: add_hosts.yml
+- import_playbook: ping.yml
+

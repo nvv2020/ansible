@@ -1,12 +1,10 @@
 ---
 - hosts: "group1" 
-  become: false 
   tasks: 
   - name: "Ping" 
     ansible.builtin.ping:
 
 - hosts: "group2" 
-  become: false 
   tasks: 
   - name: "ls" 
-    command: "ls /tmp"    
+    command: "ls -la /tmp"    
